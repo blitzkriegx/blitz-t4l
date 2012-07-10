@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>App.Task.Create</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+        </style>
+	</head>
+	<body>
+	    <h1>App.Task.Create Demo</h1>
+		<form id='create' action=''></form>
+		<div id='tasks'></div>
+		<script type='text/javascript' 
+                src='../../../steal/steal.js'>
+        </script>
+		<script type='text/javascript'>
+			steal('app/task/create','app/fixtures',function(){
+				
+				$('#create').app_task_create();
+				App.Models.Task.bind('created', function(ev, task){
+					$('<div>').html("<h3>"+task.name+"</h3><p>"+task.description+"</p>")
+					        .appendTo( $('#tasks') )
+				})
+				
+			})
+		</script>
+	</body>
+</html>

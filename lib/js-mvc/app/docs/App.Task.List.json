@@ -1,0 +1,1 @@
+c({"name": "App.Task.List", "type": "class", "comment": "<p>Lists tasks and lets you destroy them.</p>", "parents": ["index"], "inherits": "jQuery.Controller", "src": "app/task/list/list.js", "line": 8, "children": ["App.Task.List.static", "App.Task.List.prototype"]})

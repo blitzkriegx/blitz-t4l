@@ -1,0 +1,1 @@
+c({"name": "App.Task.Create", "type": "class", "comment": "<p>Creates tasks</p>", "parents": ["index"], "inherits": "jQuery.Controller", "src": "app/task/create/create.js", "line": 7, "children": ["App.Task.Create.prototype"]})
